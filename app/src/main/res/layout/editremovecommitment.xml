@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:hint="Commitment Title"
+        android:id="@+id/newCommitmentTitle"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#66000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/newCommitmentDescription"
+        android:layout_alignLeft="@+id/newCommitmentTitle"
+        android:layout_alignStart="@+id/newCommitmentTitle"
+        android:layout_below="@+id/newCommitmentTitle"
+        android:layout_alignRight="@+id/newCommitmentTitle"
+        android:hint="Commitment Description"
+        android:gravity="top"
+        android:layout_alignEnd="@+id/newCommitmentTitle"
+        android:backgroundTint="#66000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points for completion:"
+        android:id="@+id/textView16"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/newCommitmentMorePoints"
+        android:layout_alignBottom="@+id/newCommitmentMorePoints"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignLeft="@+id/newCommitmentDescription"
+        android:layout_alignStart="@+id/newCommitmentDescription" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/newCommitmentMorePoints"
+        android:onClick="adjustPointsAdd"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/newCommitmentDescription"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/newCommitmentLessPoints"
+        android:onClick="adjustPointsRem"
+        android:layout_below="@+id/newCommitmentMorePoints"
+        android:layout_alignLeft="@+id/newCommitmentMorePoints"
+        android:layout_alignStart="@+id/newCommitmentMorePoints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/newCommitmentPoints"
+        android:textColor="#000000"
+        android:textSize="@dimen/abc_alert_dialog_button_bar_height"
+        android:layout_alignBottom="@+id/newCommitmentLessPoints"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User(s) Assigned Commitment:"
+        android:id="@+id/textView17"
+        android:textColor="#000000"
+        android:layout_below="@+id/newCommitmentStartDeadline"
+        android:layout_alignLeft="@+id/newCommitmentDescription"
+        android:layout_alignStart="@+id/newCommitmentDescription" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:id="@+id/newCommitmentUserList"
+        android:background="#31000000"
+        android:choiceMode="none"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignRight="@+id/newCommitmentStartDeadline"
+        android:layout_alignEnd="@+id/newCommitmentStartDeadline" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Commitment"
+        android:id="@+id/newCommitmentAddUsersButton"
+        android:onClick="removeCommitment"
+        android:layout_above="@+id/newCommitmentCreateButton"
+        android:layout_alignLeft="@+id/newCommitmentCreateButton"
+        android:layout_alignStart="@+id/newCommitmentCreateButton"
+        android:layout_alignRight="@+id/newCommitmentCreateButton"
+        android:layout_alignEnd="@+id/newCommitmentCreateButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalise Changes"
+        android:id="@+id/newCommitmentCreateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/newCommitmentUserList"
+        android:layout_alignStart="@+id/newCommitmentUserList"
+        android:layout_alignRight="@+id/newCommitmentUserList"
+        android:layout_alignEnd="@+id/newCommitmentUserList"
+        android:onClick="editCommitment"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/newCommitmentEndDeadline"
+        android:hint="Final Deadline"
+        android:layout_above="@+id/textView17"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_toLeftOf="@+id/newCommitmentPoints"
+        android:layout_toStartOf="@+id/newCommitmentPoints"
+        android:backgroundTint="#66000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="Initial Deadline"
+        android:id="@+id/newCommitmentStartDeadline"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/newCommitmentEndDeadline"
+        android:layout_alignRight="@+id/newCommitmentDescription"
+        android:layout_alignEnd="@+id/newCommitmentDescription"
+        android:backgroundTint="#66000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+</RelativeLayout>

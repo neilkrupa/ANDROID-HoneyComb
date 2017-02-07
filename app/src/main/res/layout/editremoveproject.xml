@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Project"
+        android:id="@+id/addProject"
+        android:layout_gravity="center_horizontal"
+        android:onClick="removeProject"
+        android:layout_below="@+id/newProjectCommitmentList"
+        android:layout_alignLeft="@+id/newProjectCommitmentList"
+        android:layout_alignStart="@+id/newProjectCommitmentList" />
+
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:id="@+id/newProjectName"
+        android:hint="Project Name"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:background="#66000000"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:hint="Project Description"
+        android:gravity="top"
+        android:id="@+id/newProjectDescription"
+        android:layout_below="@+id/newProjectName"
+        android:layout_alignLeft="@+id/newProjectName"
+        android:layout_alignStart="@+id/newProjectName"
+        android:background="#66000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignRight="@+id/newProjectName"
+        android:layout_alignEnd="@+id/newProjectName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commitments:"
+        android:id="@+id/textView12"
+        android:textColor="#000000"
+        android:layout_below="@+id/newProjectTeamMemberList"
+        android:layout_alignLeft="@+id/newProjectTeamMemberList"
+        android:layout_alignStart="@+id/newProjectTeamMemberList" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/newProjectCommitmentList"
+        android:dividerHeight="1.0sp"
+        android:background="#31000000"
+        android:choiceMode="none"
+        android:layout_above="@+id/newProjectAddCommitmentButton"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_alignRight="@+id/newProjectTeamMemberList"
+        android:layout_alignEnd="@+id/newProjectTeamMemberList"
+        android:layout_below="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Members:"
+        android:id="@+id/textView18"
+        android:textColor="#000000"
+        android:layout_below="@+id/deadline"
+        android:layout_alignLeft="@+id/deadline"
+        android:layout_alignStart="@+id/deadline" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/newProjectTeamMemberList"
+        android:background="#31000000"
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_alignRight="@+id/deadline"
+        android:layout_alignEnd="@+id/deadline" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Commitment"
+        android:id="@+id/newProjectAddCommitmentButton"
+        android:onClick="newProjectAddCommitment"
+        android:layout_above="@+id/button6"
+        android:layout_alignRight="@+id/newProjectCommitmentList"
+        android:layout_alignEnd="@+id/newProjectCommitmentList" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Project"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal"
+        android:onClick="saveProject"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/addProject"
+        android:layout_alignStart="@+id/addProject"
+        android:layout_alignRight="@+id/newProjectAddCommitmentButton"
+        android:layout_alignEnd="@+id/newProjectAddCommitmentButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Edit/Remove Project"
+        android:id="@+id/textView10"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/newProjectName"
+        android:layout_alignStart="@+id/newProjectName" />
+
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:id="@+id/deadline"
+        android:hint="Deadline"
+        android:layout_below="@+id/newProjectDescription"
+        android:layout_alignLeft="@+id/newProjectDescription"
+        android:layout_alignStart="@+id/newProjectDescription"
+        android:background="#66000000"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_alignRight="@+id/newProjectName"
+        android:layout_alignEnd="@+id/newProjectName" />
+
+</RelativeLayout>

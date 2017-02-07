@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nakrupadevelopment.nakrupa.honeycomb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+
+        <activity android:name=".SplashScreen" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".Main" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.LOGINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Register" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.REGISTERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CreateProject" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.CREATEPROJECT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CreateCommitment" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.CREATECOMMITMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddTeamMember" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.ADDMEMBERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewProject" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.VIEWPROJECT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddCommitmentMember" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.ADDCOMMITMENTMEMBER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EditRemoveCommitment" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.EDITCOMMITMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewCommitment" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.MYCOMMITMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CommitmentList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.MYCOMMITMENTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ToDoList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.TODOLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PerformanceBreakdown" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.PERFORMANCEBREAKDOWN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AssistForum" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.ASSISTFORUM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AcceptCommitment" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.ACCEPTCOMMITMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddSkill" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.ADDSKILL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EditRemoveProject" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.EDITREMOVEPROJECT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EditSkill" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.EDITSKILL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Issue" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.ISSUE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PostToAssist" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.POSTTOASSIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ProjectList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.PROJECTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RespondAssist" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.RESPONDASSIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Settings" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SkillList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.SKILLLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewNotifications" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.VIEWNOTIFICATIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewProfile" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.VIEWPROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewUser" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.VIEWUSER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewResponse" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nakrupadevelopment.nakrupa.honeycomb.VIEWRES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

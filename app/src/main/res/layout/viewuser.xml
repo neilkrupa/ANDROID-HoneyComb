@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:id="@+id/setUserImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/user_image"
+            android:onClick="setUserImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Username: "
+            android:id="@+id/usernameProfile"
+            android:layout_alignTop="@+id/setUserImage"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email: "
+            android:id="@+id/emailProfile"
+            android:textColor="#000000"
+            android:layout_above="@+id/profileEmail"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Point Score: "
+            android:id="@+id/pointScoreProfile"
+            android:textColor="#000000"
+            android:layout_below="@+id/setUserImage"
+            android:layout_alignRight="@+id/setUserImage"
+            android:layout_alignEnd="@+id/setUserImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profileUsername"
+            android:layout_below="@+id/usernameProfile"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage"
+            android:textColor="#646464" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/profileEmail"
+            android:layout_alignBottom="@+id/setUserImage"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage"
+            android:textColor="#6f6f6f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profilePointScore"
+            android:textColor="#00a91f"
+            android:layout_below="@+id/pointScoreProfile"
+            android:layout_alignLeft="@+id/setUserImage"
+            android:layout_alignStart="@+id/setUserImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Number of Commitments Completed:"
+            android:id="@+id/textView6"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/profilePointScore"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profileCommitments"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/profilePointScore"
+            android:layout_alignStart="@+id/profilePointScore"
+            android:textColor="#a97f00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Number of Projects Completed:"
+            android:id="@+id/textView8"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/profileCommitments"
+            android:layout_alignLeft="@+id/skillList"
+            android:layout_alignStart="@+id/skillList"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profileProjects"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/profileCommitments"
+            android:layout_alignStart="@+id/profileCommitments"
+            android:textColor="#a94600" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillList"
+            android:layout_below="@+id/profileProjects"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"
+            android:background="#31000000"
+            android:fadingEdgeLength="40dp"
+            android:choiceMode="multipleChoice" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

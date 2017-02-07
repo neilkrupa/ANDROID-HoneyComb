@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Project Name:"
+        android:id="@+id/openProject"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Leader: "
+        android:id="@+id/openProjectLeader"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/openProject"
+        android:layout_alignLeft="@+id/openProject"
+        android:layout_alignStart="@+id/openProject" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Description:"
+        android:id="@+id/textView15"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/openProjectLeader"
+        android:layout_alignLeft="@+id/openProjectLeader"
+        android:layout_alignStart="@+id/openProjectLeader" />
+
+    <EditText
+        android:layout_width="305dp"
+        android:layout_height="100dp"
+        android:id="@+id/openProjectDescription"
+        android:nestedScrollingEnabled="true"
+        android:enabled="false"
+        android:editable="false"
+        android:textColor="#ffffff"
+        android:background="#66000000"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:gravity="top"
+        android:layout_below="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Team Members:"
+        android:id="@+id/textView13"
+        android:textColor="#000000"
+        android:layout_marginTop="109dp"
+        android:layout_below="@+id/textView26"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/userList"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_alignRight="@+id/openProjectDescription"
+        android:layout_alignEnd="@+id/openProjectDescription"
+        android:background="#31000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deadline:"
+        android:id="@+id/textView14"
+        android:textColor="#000000"
+        android:layout_below="@+id/userList"
+        android:layout_alignLeft="@+id/userList"
+        android:layout_alignStart="@+id/userList"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date..."
+        android:id="@+id/openProjectDeadlineDate"
+        android:textColor="#18ad2c"
+        android:textSize="38dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Performance Breakdown"
+        android:id="@+id/textView24"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/openProject"
+        android:layout_alignStart="@+id/openProject"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Number of Commitments: "
+        android:id="@+id/textView26"
+        android:textColor="#000000"
+        android:layout_below="@+id/openProjectDescription"
+        android:layout_alignLeft="@+id/openProjectDescription"
+        android:layout_alignStart="@+id/openProjectDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active Commitments:"
+        android:id="@+id/textView27"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView26"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed Commitments:"
+        android:id="@+id/textView28"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView27"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage Complete:"
+        android:id="@+id/textView29"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView28"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="10%"
+        android:id="@+id/textView30"
+        android:textColor="#18ad2c"
+        android:textSize="38dp"
+        android:layout_below="@+id/textView29"
+        android:layout_toRightOf="@+id/openProjectDeadlineDate"
+        android:layout_toEndOf="@+id/openProjectDeadlineDate" />
+
+</RelativeLayout>

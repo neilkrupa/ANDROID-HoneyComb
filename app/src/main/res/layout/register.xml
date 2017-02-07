@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/registerScreenRegButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="registerScreenRegButtonClick"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/reenterPasswordET"
+        android:layout_alignEnd="@+id/reenterPasswordET"
+        android:layout_alignLeft="@+id/reenterPasswordET"
+        android:layout_alignStart="@+id/reenterPasswordET" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameET"
+        android:inputType="text"
+        android:hint="Username"
+        android:backgroundTint="#7f000000"
+        android:textColorHint="#e5e5e5"
+        android:layout_above="@+id/emailET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailET"
+        android:inputType="text"
+        android:hint="Email Address"
+        android:backgroundTint="#7f000000"
+        android:textColorHint="#e5e5e5"
+        android:layout_above="@+id/passwordET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordET"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:backgroundTint="#7f000000"
+        android:textColorHint="#e5e5e5"
+        android:layout_above="@+id/reenterPasswordET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reenterPasswordET"
+        android:inputType="textPassword"
+        android:hint="Re-enter Password"
+        android:backgroundTint="#7f000000"
+        android:textColorHint="#e5e5e5"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/registerScreenRegButton"
+        android:layout_marginRight="16dp"
+        android:layout_alignLeft="@+id/passwordET"
+        android:layout_alignStart="@+id/passwordET"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Register"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/usernameET"
+        android:layout_alignStart="@+id/usernameET"
+        android:layout_marginTop="21dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Register with the Honeycomb application to connect with other developers to create and manage projects.
+        \nBy registering you will be able to use all of Honeycombs features."
+        android:id="@+id/textView2"
+        android:textColor="#000000"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:layout_above="@+id/usernameET"
+        android:layout_alignLeft="@+id/usernameET"
+        android:layout_alignStart="@+id/usernameET"
+        android:layout_marginBottom="41dp" />
+</RelativeLayout>

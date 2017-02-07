@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:weightSum="1">
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/live"
+        android:background="@drawable/live"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dip"
+        android:onClick="showLive"/>
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/projects"
+        android:background="@drawable/projects"
+        android:layout_alignTop="@+id/live"
+        android:layout_toRightOf="@+id/live"
+        android:layout_toEndOf="@+id/live"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="showProjects"/>
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/profile"
+        android:background="@drawable/profile"
+        android:layout_alignTop="@+id/projects"
+        android:layout_centerHorizontal="true"
+        android:onClick="showProfile"/>
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/notifications"
+        android:background="@drawable/notifications_open"
+        android:layout_alignTop="@+id/profile"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_toEndOf="@+id/profile"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:onClick="showNotifications"/>
+
+    <ImageButton
+        android:layout_width="28dip"
+        android:layout_height="40dip"
+        android:id="@+id/moreButton"
+        android:background="@drawable/more"
+        android:layout_alignTop="@+id/notifications"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:onClick="showMore"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notLists"
+        android:layout_below="@+id/live"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:background="#66000000" />
+</RelativeLayout>

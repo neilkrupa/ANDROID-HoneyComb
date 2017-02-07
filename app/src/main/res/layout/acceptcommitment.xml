@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Commitment Title:"
+        android:id="@+id/myCommitmentsTitleTextr"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:textColor="#79000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:id="@+id/textView19"
+        android:textColor="#79000000"
+        android:layout_below="@+id/myCommitmentsTitle"
+        android:layout_alignLeft="@+id/myCommitmentsTitleTextr"
+        android:layout_alignStart="@+id/myCommitmentsTitleTextr" />
+
+    <EditText
+        android:layout_width="320dip"
+        android:layout_height="280dip"
+        android:id="@+id/myCommitmentsDescription"
+        android:background="#66000000"
+        android:editable="false"
+        android:nestedScrollingEnabled="true"
+        android:gravity="center"
+        android:layout_below="@+id/textView19"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start by:"
+        android:id="@+id/textView20"
+        android:layout_marginTop="34dp"
+        android:textColor="#79000000"
+        android:layout_below="@+id/myCommitmentsDescription"
+        android:layout_alignLeft="@+id/myCommitmentsDescription"
+        android:layout_alignStart="@+id/myCommitmentsDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/myCommitmentsStartDeadline"
+        android:layout_below="@+id/textView20"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete By:"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/myCommitmentsStartDeadline"
+        android:layout_alignLeft="@+id/myCommitmentsStartDeadline"
+        android:layout_alignStart="@+id/myCommitmentsStartDeadline"
+        android:layout_marginTop="5dp"
+        android:textColor="#79000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/myCommitmentsEndDeadline"
+        android:layout_below="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Commitment"
+        android:id="@+id/myCommitmentsSubmitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/myCommitmentsEndDeadline"
+        android:layout_alignStart="@+id/myCommitmentsEndDeadline"
+        android:layout_marginBottom="26dp"
+        android:layout_alignRight="@+id/myCommitmentsPoints"
+        android:layout_alignEnd="@+id/myCommitmentsPoints"
+        android:onClick="acceptCommitment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Points for completion:"
+        android:id="@+id/textView23"
+        android:layout_toRightOf="@+id/myCommitmentsTitleTextr"
+        android:layout_toEndOf="@+id/myCommitmentsTitleTextr"
+        android:layout_alignTop="@+id/textView20"
+        android:textColor="#79000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="+0"
+        android:id="@+id/myCommitmentsPoints"
+        android:textSize="@dimen/abc_action_bar_default_height_material"
+        android:textColor="#02a127"
+        android:layout_alignTop="@+id/myCommitmentsStartDeadline"
+        android:layout_alignRight="@+id/myCommitmentsDescription"
+        android:layout_alignEnd="@+id/myCommitmentsDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/myCommitmentsTitle"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/myCommitmentsTitleTextr"
+        android:layout_alignRight="@+id/myCommitmentsDescription"
+        android:layout_alignEnd="@+id/myCommitmentsDescription"
+        android:layout_alignLeft="@+id/myCommitmentsTitleTextr"
+        android:layout_alignStart="@+id/myCommitmentsTitleTextr"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myCommitmentRefactor"
+        android:layout_alignTop="@+id/myCommitmentsTitleTextr"
+        android:layout_toStartOf="@+id/myCommitmentsPoints"
+        android:layout_alignRight="@+id/myCommitmentsTitle"
+        android:layout_alignEnd="@+id/myCommitmentsTitle"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>

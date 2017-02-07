@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/one"
+        android:title="My Commitments"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="To Do List"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Assist Forum"/>
+
+    <item
+        android:id="@+id/four"
+        android:title="Performance Breakdown" />
+
+    <item
+        android:id="@+id/five"
+        android:title="Edit/Remove Project" />
+
+</menu>

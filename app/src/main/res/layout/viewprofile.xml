@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:weightSum="1">
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/live"
+        android:background="@drawable/live"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dip"
+        android:onClick="showLive"/>
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/projects"
+        android:background="@drawable/projects"
+        android:layout_alignTop="@+id/live"
+        android:layout_toRightOf="@+id/live"
+        android:layout_toEndOf="@+id/live"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="showProjects"/>
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/profile"
+        android:background="@drawable/profile_open"
+        android:layout_alignTop="@+id/projects"
+        android:layout_centerHorizontal="true"
+        android:onClick="showProfile"/>
+
+    <ImageButton
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:id="@+id/notifications"
+        android:background="@drawable/notifications"
+        android:layout_alignTop="@+id/profile"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_toEndOf="@+id/profile"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:onClick="showNotifications"/>
+
+    <ImageButton
+        android:layout_width="28dip"
+        android:layout_height="40dip"
+        android:id="@+id/moreButton"
+        android:background="@drawable/more"
+        android:layout_alignTop="@+id/notifications"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:onClick="showMore"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/live"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp">
+
+        <ImageButton
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:id="@+id/setUserImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/user_image"
+            android:onClick="setUserImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Username: "
+            android:id="@+id/usernameProfile"
+            android:layout_alignTop="@+id/setUserImage"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email: "
+            android:id="@+id/emailProfile"
+            android:textColor="#000000"
+            android:layout_above="@+id/profileEmail"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Point Score: "
+            android:id="@+id/pointScoreProfile"
+            android:textColor="#000000"
+            android:layout_below="@+id/setUserImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profileUsername"
+            android:layout_below="@+id/usernameProfile"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage"
+            android:textColor="#3c3c3c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/profileEmail"
+            android:layout_alignBottom="@+id/setUserImage"
+            android:layout_toRightOf="@+id/setUserImage"
+            android:layout_toEndOf="@+id/setUserImage"
+            android:textColor="#3c3c3c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profilePointScore"
+            android:textColor="#00a91f"
+            android:layout_below="@+id/pointScoreProfile"
+            android:layout_alignLeft="@+id/setUserImage"
+            android:layout_alignStart="@+id/setUserImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Number of Commitments Completed:"
+            android:id="@+id/textView6"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/profilePointScore"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profileCommitments"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/profilePointScore"
+            android:layout_alignStart="@+id/profilePointScore"
+            android:textColor="#a97f00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Number of Projects Completed:"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/profileCommitments"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/profileProjects"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/profileCommitments"
+            android:layout_alignStart="@+id/profileCommitments"
+            android:textColor="#a94600" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skillList"
+            android:layout_below="@+id/profileProjects"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"
+            android:fadingEdgeLength="40dp"
+            android:background="#66000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
